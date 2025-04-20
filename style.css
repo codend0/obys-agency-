@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Plain Light";
+  src: url("./fonts/plain-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: "Silk Serif";
+    src: url("./fonts/silkserif-lightitalic-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Plain Light";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #0b0b0b;
+  padding: 25vh 10vw;
+}
+.line {
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2vw;
+  text-transform: uppercase;
+}
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2  vw;
+}
+#line1-part1 h5,#line1-part1 h6{
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "Silk Serif";
+}
+#line1-part1 h5{
+  width: 5vw;
+  text-align: right;
+  
+}
+.line h1 {
+  font-size: 6.5vw;
+  text-align: uppercase;
+  font-weight: 900;
+}
+.line h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count:infinite ;
+}
+@keyframes anime {
+  0%{
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px #fff;
+    color:#fff;
+    font-weight: 500;
+    opacity: 1;
+  }
+  47%{
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px #fff;
+    color:#fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+  50%{
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }
+  100%{
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 0;
+  }
+}
+
+
+#main {
+  position: relative;
+  background-color: #111;
+}
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #151515;
+}
+#page1 #nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.3vw 4.5vw;
+}
+#nav-part2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+#nav-part2 h4{
+  font-size: 0.8 vw;
+  font-weight: 100;
+  font-family: "Silk Serif";
+}
